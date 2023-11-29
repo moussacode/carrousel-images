@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Slide</title>
+  </head>
+  <body>
+    <div class="contenu">
+      <div id="slider">
+        <img src="image/image1.jpg" alt="" srcset="" id="slide" />
+        <div id="desc">Montagne</div>
+        <div class="bouton">
+          <div id="precedent" onclick="ChangerImage(-1)">
+            <img src="image/left-arrow.png" alt="" srcset="" />
+          </div>
+          <div id="suivant" onclick="ChangerImage(+1)">
+            <img src="image/R-arrow.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

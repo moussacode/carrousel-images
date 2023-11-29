@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins";
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("image/image1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  transition: background-image 0.5s ease-in-out;
+}
+#slide {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.546);
+}
+#slider {
+  width: 500px;
+}
+.bouton {
+  display: flex;
+  justify-content: center;
+  gap: 50%;
+  height: 60px;
+}
+
+#precedent img,
+#suivant img {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+#suivant img:active {
+  transform: translateX(10px);
+}
+#precedent img:active {
+  transform: translateX(-10px);
+}
+
+#desc {
+  padding: 2%;
+  height: 40px;
+  text-align: center;
+}
+.contenu {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5%;
+  color: #060606;
+  border-radius: 5px;
+}
+#slide {
+  transition: opacity 0.5s ease-in-out;
+}
+#desc {
+  transition: opacity 0.5s ease-in-out;
+}
