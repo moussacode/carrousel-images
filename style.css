@@ -73,3 +73,29 @@ body {
 #desc {
   transition: opacity 0.5s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0%;
+  }
+
+  #slider {
+    max-width: 100%;
+  }
+  #slide {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.546);
+  }
+  #slider {
+    width: 230px;
+  }
+  #precedent img,
+  #suivant img {
+    width: 30px;
+    height: 30px;
+  }
+  .bouton {
+    height: 40px;
+  }
+}
